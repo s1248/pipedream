@@ -35,12 +35,14 @@ export default {
       propDefinition: [
         bingx,
         "stopLossPrice",
+        optional: true,
       ],
     },
     takerProfitPrice: {
       propDefinition: [
         bingx,
         "takerProfitPrice",
+        optional: true,
       ],
     },    
     tradeType: {
