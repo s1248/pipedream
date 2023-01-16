@@ -37,10 +37,10 @@ export default {
         "stopLossPrice",
       ],
     },
-    takeProfitPrice: {
+    takerProfitPrice: {
       propDefinition: [
         bingx,
-        "takeProfitPrice",
+        "takerProfitPrice",
       ],
     },    
     tradeType: {
@@ -70,7 +70,7 @@ export default {
       "tradeType": this.tradeType,
       "action": this.action,
       "stopLossPrice": this.bingx.convertToFloat(this.stopLossPrice),
-      "takeProfitPrice": this.bingx.convertToFloat(this.takeProfitPrice),
+      "takerProfitPrice": this.bingx.convertToFloat(this.takerProfitPrice),
     };
     let returnValue = await this.bingx.makeRequest(API_METHOD, API_PATH, parameters);
     $.export("$summary", `New Future Order for ${this.symbol}`);
