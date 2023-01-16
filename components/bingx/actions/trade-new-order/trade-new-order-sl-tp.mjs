@@ -69,10 +69,8 @@ export default {
       "entrustVolume": this.bingx.convertToFloat(this.entrustVolume),
       "tradeType": this.tradeType,
       "action": this.action,
-      "triggerCloseV2": {
-        "stopLossPrice": this.bingx.convertToFloat(this.stopLossPrice),
-        "takeProfitPrice": this.bingx.convertToFloat(this.takeProfitPrice),
-      },
+      "stopLossPrice": this.bingx.convertToFloat(this.stopLossPrice),
+      "takeProfitPrice": this.bingx.convertToFloat(this.takeProfitPrice),
     };
     let returnValue = await this.bingx.makeRequest(API_METHOD, API_PATH, parameters);
     $.export("$summary", `New Future Order for ${this.symbol}`);
