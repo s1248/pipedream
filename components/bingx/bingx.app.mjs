@@ -70,9 +70,9 @@ export default {
       type: "string",
       optional: false,
     },
-    takeProfitPrice: {
-      label: "takeProfitPrice",
-      description: "takeProfitPrice",
+    takerProfitPrice: {
+      label: "takerProfitPrice",
+      description: "takerProfitPrice",
       type: "string",
       optional: false,
     },    
