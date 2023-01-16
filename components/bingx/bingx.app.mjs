@@ -64,6 +64,18 @@ export default {
       type: "string",
       optional: false,
     },
+    stopLossPrice: {
+      label: "stopLossPrice",
+      description: "stopLossPrice",
+      type: "string",
+      optional: false,
+    },
+    takeProfitPrice: {
+      label: "takeProfitPrice",
+      description: "takeProfitPrice",
+      type: "string",
+      optional: false,
+    },    
     leverage: {
       label: "Position Leverage",
       description: "Position Leverage",
